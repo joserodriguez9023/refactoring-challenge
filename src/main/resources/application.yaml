@@ -1,0 +1,6 @@
+
+spring:
+  r2dbc:
+    username: postgres
+    password: pgadmin2024
+    url: r2dbc:postgresql://localhost:5432/social_mentions_db
