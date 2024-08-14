@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 @RestController
-@RequestMapping("/analyzer")
+@RequestMapping("/v1/analyzer")
 @AllArgsConstructor
 @Slf4j
 public class SocialMentionsController {

@@ -1,6 +1,0 @@
-2024-08-12 21:20:38,298 INFO  c.a.postAnalyzer.application.App  - Starting App using Java 21.0.3 with PID 16744 (C:\Users\jose.rodriguez\Documents\refactoring-challenge\build\classes\java\main started by jose.rodriguez in C:\Users\jose.rodriguez\Documents\refactoring-challenge)
-2024-08-12 21:20:38,299 INFO  c.a.postAnalyzer.application.App  - No active profile set, falling back to 1 default profile: "default"
-2024-08-12 21:20:39,195 INFO  o.s.d.r.c.RepositoryConfigurationDelegate  - Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
-2024-08-12 21:20:39,440 INFO  o.s.d.r.c.RepositoryConfigurationDelegate  - Finished Spring Data repository scanning in 237 ms. Found 2 R2DBC repository interfaces.
-2024-08-12 21:20:41,773 INFO  o.s.b.w.e.netty.NettyWebServer  - Netty started on port 8080
-2024-08-12 21:20:41,784 INFO  c.a.postAnalyzer.application.App  - Started App in 4.04 seconds (process running for 5.955)

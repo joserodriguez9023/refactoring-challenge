@@ -1,7 +1,6 @@
 package com.appgate.postAnalyzer.domain.service.fb;
 
 import com.appgate.postAnalyzer.domain.bo.SourceSMBO;
-import lombok.AllArgsConstructor;
 
 import java.util.Random;
 

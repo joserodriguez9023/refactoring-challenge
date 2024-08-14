@@ -7,7 +7,7 @@ import static java.lang.String.format;
 
 public class FBBuildMessage {
     private static final String PREFIX_MESSAGE = "facebookMessage: %s";
-    private static final String PREFIX_COMMENTS = " || comments: %s";
+    private static final String PREFIX_COMMENTS = " || comments:%s";
 
     public static String buildMessage(SourceSMBO sourceSocialMentionBO) {
          String result = format(PREFIX_MESSAGE, sourceSocialMentionBO.getSocialMentionDto().getMessage());

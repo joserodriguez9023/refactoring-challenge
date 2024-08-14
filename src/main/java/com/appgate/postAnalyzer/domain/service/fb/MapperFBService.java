@@ -1,17 +1,16 @@
 package com.appgate.postAnalyzer.domain.service.fb;
 
 import com.appgate.postAnalyzer.domain.bo.ScoreSMBO;
-import com.appgate.postAnalyzer.domain.bo.SourceSMBO;
 import com.appgate.postAnalyzer.domain.dto.AnalysisSocialMentionResponseDto;
 import com.appgate.postAnalyzer.infrastructure.db.entities.AnalyzedFbPost;
 
 import java.time.LocalDateTime;
-import java.util.Random;
 
 public class MapperFBService {
 
 
     private static final String TYPE_ACCOUNT = "Facebook";
+
     public static AnalyzedFbPost fromScoreSMBOToAnalyzedFbPost(ScoreSMBO scoreSMBO) {
         return AnalyzedFbPost.builder()
                 .score(scoreSMBO.getScore())

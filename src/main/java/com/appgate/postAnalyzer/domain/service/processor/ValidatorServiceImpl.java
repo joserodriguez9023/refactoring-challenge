@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 public class ValidatorServiceImpl  implements ValidatorService {
 
     private static final String SOURCE_MESSAGE = "Error, Twitter or Facebook account must be present";
+    private static final String COMMENTS_MESSAGE = "Send the list of comments, even if it's empty.";
 
 
     private void message(String message) throws ApiUnprocessableEntity {
@@ -21,6 +22,7 @@ public class ValidatorServiceImpl  implements ValidatorService {
     @Override
     public void validParams(SocialMentionDto socialMentionDto) throws ApiUnprocessableEntity {
         hasSource(socialMentionDto);
+        hasComments(socialMentionDto);
     }
 
     private void hasSource(SocialMentionDto socialMentionDto) throws ApiUnprocessableEntity{
@@ -29,6 +31,16 @@ public class ValidatorServiceImpl  implements ValidatorService {
             if(socialMentionDto.getTwitterAccount() == null || socialMentionDto.getTwitterAccount().trim().isEmpty()){
                     this.message(SOURCE_MESSAGE);
         }
+    }
+
+    private void hasComments(SocialMentionDto socialMentionDto) throws ApiUnprocessableEntity {
+        if(socialMentionDto.getFacebookAccount() != null && !socialMentionDto.getFacebookAccount().trim().isEmpty()){
+            if(socialMentionDto.getFacebookComments()==null){
+                this.message(COMMENTS_MESSAGE);
+            }
+        }
+
+
     }
 
 }
